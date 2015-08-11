@@ -12,8 +12,8 @@ public class First_Person_Camera : MonoBehaviour
 	
 
 	void Update () 
-	{	//ok
-		//transform.position = target.transform.position;
+	{
+		transform.position = target.transform.position;
 		//stransform.LookAt (target);
 	}
 
