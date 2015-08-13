@@ -16,7 +16,10 @@ public class MouseLook : MonoBehaviour {    //Made by Jeremy get Rekt Joshua
 
     float rotationY = 0F;
 
+    void Start()
+    {
 
+    }
 
 
 
@@ -45,10 +48,5 @@ public class MouseLook : MonoBehaviour {    //Made by Jeremy get Rekt Joshua
 
             transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
         }
-    }
-
-    void Start()
-    {
-
     }
 }
