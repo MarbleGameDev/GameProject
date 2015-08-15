@@ -24,7 +24,9 @@ public class ConsoleCommandsRepository {
 
   public void RegisterCommand(string command, ConsoleCommandCallback callback) {
     repository[command] = new ConsoleCommandCallback(callback);
-		repoList.Add (command, command);
+	if (!repoList.ContainsKey (command)) {
+			repoList.Add (command, command);
+		}
   }
 
   public bool HasCommand(string command) {
